@@ -16,9 +16,9 @@
     <h4>Velo du 35</h4>
     <adress>
       20 rue de l'exercice<br>
-      00404 La Ballade
+      35000 La Ballade
     </adress>
-    <p>Copyright © 2020 TIW Buroscope - Tous droits réservés - Photos non contractuelles</p>
+    <p>Copyright © 2020 TIW Tazlo - Tous droits réservés - Photos non contractuelles</p>
   </footer>
 
 

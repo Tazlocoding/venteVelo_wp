@@ -3,15 +3,16 @@
   <form action="" id="search-home" class="red-rounded container">
     <select name="">
       <option>Type de vélo</option>
-      <!-- <option value="Custom">Custom</option>
-      <option value="Sportive">Sportive</option>
-      <option value="Routiere">Routière</option> -->
+      <option value="course">Course</option>
+      <option value="piste">Piste</option>
+      <option value="vtt">Vtt</option>
+      <option value="randonnee">Randonnée</option>
     </select>
     <select name="">
-      <option>Catégorie</option>
-      <!-- <option value="500">500 cm3</option>
-      <option value="600">600 cm3</option>
-      <option value="750">750 cm3</option> -->
+      <option>Taille</option>
+      <option value="48">48 cm</option>
+      <option value="50">50 cm</option>
+      <option value="54">54 cm</option>
     </select>
     <input type="number" name="" id="" placeholder="Prix maximum (en €)">
     <input class="btn-link reverse" type="submit" value="rechercher">

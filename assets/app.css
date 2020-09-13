@@ -17,7 +17,7 @@
 */
 /*-------------------------------------------- 0 - GLOBAL */
   :root {
-    --primary: #f44336;
+    --primary: #bcbe2a;
     --primary-alpha: rgba(63, 60, 241, 0.7);
     --white: #f3f3f3;
   }
@@ -64,15 +64,14 @@
     padding:5px;
     display:inline-block;
   }
+
   .social img {
     width:30px;
     height:30px;
   }
 
- 
-
   /* .btn-link */
-  .btn-link {
+  .wp_block_button-link {
     display:inline-block;
     border-radius:2rem;
     background-color: var(--primary);
@@ -81,8 +80,9 @@
     padding:5px 10px;
     margin-right: 1rem;
   }
+
   /* .btn-link */
-  .btn-link.reverse {
+  .wp_block_button-link.reverse {
     background-color: var(--white);
     color: var(--primary);
   }
