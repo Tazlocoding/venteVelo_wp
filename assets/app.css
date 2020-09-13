@@ -1,0 +1,336 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+/* 
+  SOMMAIRE
+  --> HELLO A TOUS LES STAGIAIRES 
+  0 - GLOBAL
+  1 - NAV
+  2 - HEADER
+  
+  4 - MOTOS LIST
+  5 - FOOTER
+  6 - ANNONCE
+  7 - RESPONSIVE
+*/
+/*-------------------------------------------- 0 - GLOBAL */
+  :root {
+    --primary: #f44336;
+    --primary-alpha: rgba(63, 60, 241, 0.7);
+    --white: #f3f3f3;
+  }
+
+  body {
+    background-color: var(--white);
+    font-family: 'cairo', sans-serif;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--primary);
+  }
+
+  img {
+    height: auto !important;
+  }
+
+  select, input:not([type="submit"]), textarea {
+    border-radius:5px;
+    padding: 5px 15px;
+    border:none;
+    outline:none;
+    font-family: 'cairo', sans-serif;
+    width:100%;
+  }
+
+  [type="submit"] {
+    border:none;
+    color: #000000;
+    outline: none;
+    margin-top:20px;
+    cursor: pointer;
+  }
+
+  .social {
+    padding:5px;
+    display:inline-block;
+  }
+  .social img {
+    width:30px;
+    height:30px;
+  }
+
+ 
+
+  /* .btn-link */
+  .btn-link {
+    display:inline-block;
+    border-radius:2rem;
+    background-color: var(--primary);
+    color: var(--white);
+    text-transform: uppercase;
+    padding:5px 10px;
+    margin-right: 1rem;
+  }
+  /* .btn-link */
+  .btn-link.reverse {
+    background-color: var(--white);
+    color: var(--primary);
+  }
+
+  .red-rounded {
+    border-radius: 7px;
+    background-color: var(--primary-alpha);
+  }
+
+  .container {
+    max-width: 90%;
+    width: 950px;
+    margin: 50px auto;
+  }
+
+  #topPage {
+    width:45px;
+    height:45px;
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    line-height: 45px;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--primary);
+    border-radius: 50%;
+    font-size:30px;
+  }
+/*-------------------------------------------- 1 - NAV */
+
+  #mainNavigation {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:80px;
+    padding: 10px 40px;
+    margin : 0 auto;
+  }
+    #mainNavigation ul {
+      list-style-type: none;
+    }
+    #mainNavigation li {
+      display: inline-block;
+    }
+    #mainNavigation a {
+      color: #000000;
+      text-transform: uppercase;
+      display: inline-block;
+      padding: 10px 20px;
+    }
+    #mainNavigation img, #mainNavigation > a {
+      height:100%;
+    }
+
+/*-------------------------------------------- 2 - HEADER */
+
+  header {
+    background-image: url('../img/velotendem.jpg');
+    background-position: center;
+    background-attachment: fixed; 
+    background-size:cover;
+    padding:30px 0;
+  }
+
+  #search-home {
+    padding:20px;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+    #search-home input:not([type="submit"]), #search-home select {
+      width: 30%;
+    }
+
+
+/*-------------------------------------------- 4 - MOTOS LIST */
+
+  #last-section {
+    text-align: center;
+  }
+
+  #veloList {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+
+    .velo {
+      width:30%;
+      margin-right:20px;
+      text-align: center;
+      margin-top:15%;
+      color:var(--white);
+      position:relative;
+      padding-bottom:1rem;
+    }
+      .velo img {
+        width:90%;
+        margin-top:-55%;
+      }
+      .velo table, #annonce table {
+        width:90%;
+        margin:10px auto;
+        border-collapse: collapse;
+      }
+        .velo tr:not(:last-child) td {
+          border-bottom:solid 1px var(--white);
+        }
+        #annonce tr:not(:last-child) td {
+          border-bottom:solid 1px var(--primary);
+        }
+        .velo td, #annonce td {
+          padding:5px;
+        }
+        .velo td:first-child, #annonce td:first-child {
+          text-align: right;
+          font-weight: bold;
+        }
+        .velo td:last-child, #annonce td:last-child {
+          text-align: left;
+        }
+      .velo span {
+        display:block;
+        font-size:1.3rem;
+        font-weight: bold;
+        padding: 15px 0;
+      }
+      .velo a, #ficheVelo figcaption {
+        border:solid 2px var(--white);
+        position:absolute;
+        right: -40px;
+        bottom: -1rem;
+      }
+
+/*-------------------------------------------- 5 - FOOTER */
+  footer {
+    background-color: var(--primary-alpha);
+    color: var(--white);
+    padding: 20px 10%;  
+  }
+    footer nav {
+      float:right;
+    }
+    footer ul {
+      list-style-type: none;
+    }
+    footer a {
+      color:var(--white);
+    }
+    footer h4 {
+      margin-bottom: 15px;
+    }
+    footer p {
+      clear:both;
+      margin-top:20px;
+    }
+
+/*-------------------------------------------- 6 - ANNONCE */
+
+    #annonce form {
+      padding:20px;
+      text-align: center;
+      color: var(--white);
+    }
+      #annonce input, #annonce textarea {
+        margin-top: 20px;
+      }
+      #annonce [type="submit"] {
+        color: #000000;
+      }
+    #ficheVelo {
+      display:flex;
+      flex-wrap: wrap;
+    }
+      #ficheVelo article {
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom:50px;
+      }
+      #ficheVelo figure,
+      #ficheVelo #details,
+      #ficheVelo form,
+      #ficheVelo table {
+        width:45%;
+        position:relative;
+      }
+      #ficheVelo h2 {
+        text-align: center;
+      }
+      #ficheVelo img {
+        width:100%;
+        vertical-align: middle;
+      }
+      #ficheVelo figcaption {
+        font-size: 1.5rem;
+        border-width: 4px;
+      }
+  #navigation {
+    text-align:center;
+  }
+
+/*-------------------------------------------- 7 - RESPONSIVE */
+
+  @media screen and (max-width:750px) {
+    #veloList {
+      flex-direction: column;
+      align-items:center;
+    }
+    .velo {
+      width:80%;
+      margin-top: 30%;
+    }
+      .velo img {
+        width:60%;
+      }
+
+    #search-home {
+      flex-direction: column;
+    }
+      #search-home select, #search-home input:not([type="submit"]) {
+        width:100%;
+        margin-top:10px;
+      }
+    
+      #pres-section img, #pres-section > div {
+        float:none;
+        margin: 15px 0;
+        width:100%;
+      }
+
+    footer {
+      text-align: center;
+    }
+      footer nav {
+        float:none;
+        padding-bottom: 20px;
+      }
+
+    #ficheVelo article, #ficheVelo {
+      flex-direction: column;
+    }
+    #ficheVelo article  #details, 
+    #ficheVelo article  figure,
+    #ficheVelo form,
+    #ficheVelo table {
+      width:100%;
+    }
+  }
