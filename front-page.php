@@ -15,7 +15,7 @@
       <option value="54">54 cm</option>
     </select>
     <input type="number" name="" id="" placeholder="Prix maximum (en €)">
-    <input class="btn-link reverse" type="submit" value="rechercher">
+    <input class="wp_block_button-link reverse" type="submit" value="rechercher">
     <!-- <button type="submit">rechercher</button> -->
   </form>
 </header>
@@ -70,12 +70,12 @@
         </tr>
             </table>
             <span><?php the_field('prix') ?></span>
-            <a href="<?php the_permalink() ?>" class="btn-link">voir +</a>
+            <a href="<?php the_permalink() ?>" class="wp_block_button-link">voir +</a>
           </article>
         <?php
         endwhile; ?>
       </div>
-      <a class="btn-link" href="<?= get_post_type_archive_link('velo') ?>">
+      <a class="wp_block_button-link" href="<?= get_post_type_archive_link('velo') ?>">
       Tous nos vélos
     </a>
     </section>

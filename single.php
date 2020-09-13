@@ -16,7 +16,7 @@
       <article>
         <figure>
           <?php the_post_thumbnail('medium_large'); ?>
-          <figcaption class="btn-link"><?php the_field('tarif') ?> €</figcaption>
+          <figcaption class="wp_block_button-link"><?php the_field('tarif') ?> €</figcaption>
         </figure>
         <div id="details">
           <h1><?php the_title() ?></h1>
@@ -28,7 +28,7 @@
         <input type="text" name="" id="" placeholder="votre nom & prénom">
         <input type="email" name="" id="" placeholder="votre adresse mail">
         <textarea name="" id="" placeholder="votre message"></textarea>
-        <input type="submit" class="btn-link reverse" value="Envoyer ma demande">
+        <input type="submit" class="wp_block_button-link reverse" value="Envoyer ma demande">
       </form>
       <table>
         <tr>
@@ -71,8 +71,8 @@
 /************************************** FIN CONTENU MOTO */
       ?>
     <div class="container" id="navigation">
-      <a class="btn-link" href="<?= get_post_type_archive_link('velo') ?>">< LOOK</a>
-      <a class="btn-link" href="<?= get_post_type_archive_link('velo') ?>">CANNONDALE ></a>
+      <a class="wp_block_button-link" href="<?= get_post_type_archive_link('velo') ?>">< LOOK</a>
+      <a class="wp_block_button-link" href="<?= get_post_type_archive_link('velo') ?>">CANNONDALE ></a>
     </div>
   </main>
   
@@ -116,12 +116,12 @@
         </tr>
             </table>
             <span><?php the_field('tarif') ?></span>
-            <a href="<?php the_permalink() ?>" class="btn-link">voir +</a>
+            <a href="<?php the_permalink() ?>" class="wp_block_button-link">voir +</a>
           </article>
         <?php
         endwhile; ?>
       </div>
-      <a class="btn-link" href="<?= get_post_type_archive_link('velo') ?>">
+      <a class="wp_block_button-link" href="<?= get_post_type_archive_link('velo') ?>">
       Tous nos vélos
     </a>
     </section>

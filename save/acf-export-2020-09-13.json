@@ -1,0 +1,187 @@
+[
+    {
+        "key": "group_5f5c84b7a3307",
+        "title": "Données techniques",
+        "fields": [
+            {
+                "key": "field_5f5c84cad810f",
+                "label": "Marque",
+                "name": "marque",
+                "type": "text",
+                "instructions": "donner la marque du fournisseur",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5f5c84ead8110",
+                "label": "Catégorie",
+                "name": "categorie",
+                "type": "text",
+                "instructions": "ex: vtt route piste",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5f5c8510d8111",
+                "label": "Taille",
+                "name": "taille",
+                "type": "number",
+                "instructions": "Indiquer la taille du cadre en cm",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "cm",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5f5c8533d8112",
+                "label": "Nombre de plateau",
+                "name": "nombre_de_plateau",
+                "type": "number",
+                "instructions": "Indiquer le nombre de plateau ainsi que le nombre de dents",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5f5c8560d8113",
+                "label": "Electrique",
+                "name": "electrique",
+                "type": "text",
+                "instructions": "Indiquer vélo électrique ou non",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5f5c85a0d8114",
+                "label": "",
+                "name": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "velo"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5f5c86ccbc3c4",
+        "title": "Tarif",
+        "fields": [
+            {
+                "key": "field_5f5c86d8c0f63",
+                "label": "Tarif",
+                "name": "tarif",
+                "type": "number",
+                "instructions": "Indiquer le prix du produit sans le sigle €",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ".€",
+                "min": "",
+                "max": "",
+                "step": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]

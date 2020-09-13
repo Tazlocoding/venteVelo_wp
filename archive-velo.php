@@ -30,7 +30,7 @@
               </tr>
             </table>
             <span><?php the_field('tarif') ?></span>
-            <a href="annonce.html" class="btn-link">voir +</a>
+            <a href="annonce.html" class="wp_block_button-link">voir +</a>
           </article>
 
       <?php
@@ -40,8 +40,8 @@
 
     </div>
 
-    <a class="btn-link" href="">
-      < précédent</a> <a class="btn-link" href="">suivant >
+    <a class="wp_block_button-link" href="">
+      < précédent</a> <a class="wp_block_button-link" href="">suivant >
     </a>
 
   </section>
