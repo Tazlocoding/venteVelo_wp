@@ -68,7 +68,7 @@
 
     <?php 
       endif;
-/************************************** FIN CONTENU MOTO */
+/************************************** FIN CONTENU VELO */
       ?>
     <div class="container" id="navigation">
       <a class="wp_block_button-link" href="<?= get_post_type_archive_link('velo') ?>">< LOOK</a>
